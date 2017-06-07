@@ -1,0 +1,86 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en" class="translated-ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title%} Espinoza Consultores {% endblock%}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+
+  <body>
+ {% block header %}
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Desplegar navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="http://localhost:8000">Espinoza Consultores</a>
+  </div>
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="http://localhost:8000">Home</a></li>
+      <li><a href="adm-finanzas">Administración y Finanzas</a></li>
+      <li><a href="informatica">Informática y Tecnologia (TI)</a></li>
+      <li><a href="quienes_somos">Quienes Somos?</a></li>
+      <li><a href="nuevo">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+ {% endblock %}
+
+ {% block content %}
+    <div class="container " style="padding-top: 50px">
+      <div class="jumbotron ">
+        <h1><font><FONT FACE="times new roman">Espinoza Consultores</font></font></h1>
+        <div class="row">
+            <div class="col-md-8">
+            <p><font><FONT FACE="times new roman">Espinoza Consultores nace con el objetivo de proveer una base sólida a las empresas desde el punto de vista de la administración de los recursos humanos, procesos contables y operaciones y de la arquitectura tecnológica de sistemas (TI).</font><font></p>
+              <a href="servprofesionales" class="btn btn-lg btn-warning"><FONT FACE="times new roman">Servicios Profesionales</font></a>
+            </div>
+            <div class="col-md-4">
+                <div class="center-block">
+                <img src="../../static/img/principal.jpg" width="300" height="200"/>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="col-md-4">
+                        <img src="../../static/img/finan.jpg"/>
+                    </div>
+                    <div class="col-md-8">
+                          <p><FONT FACE="times new roman"><font class="goog-text-highlight">Asesorías financieras, servicios de contabilidad, gestión de recursos humanos son parte de los servicios que ofrece Prema en su división de Administración y Finanzas.  </font><font></p>
+                          <p><a class="btn btn-default" href="adm-finanzas" role="button"><font><font>Ver detalles "</font></font></a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+                 <div class="col-md-6">
+                    <div class="col-md-4">
+                        <img src="../../static/img/infor.jpg"/>
+                    </div>
+                    <div class="col-md-8">
+                          <p><font><font class="goog-text-highlight">Como parte de los servicios que Espinoza Consultores posee, se destacan las asesorías tecnológicas, gestión de procesos informáticos, operación, mantención y monitoreo de sistemas.</font><font></p>
+                          <p><a class="btn btn-default" href="informatica" role="button"><font><font>Ver detalles "</font></font></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+
