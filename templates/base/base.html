@@ -27,11 +27,11 @@
   </div>
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="http://localhost:8000">Home</a></li>
-      <li><a href="adm-finanzas">Administración y Finanzas</a></li>
-      <li><a href="informatica">Informática y Tecnologia (TI)</a></li>
-      <li><a href="quienes_somos">Quienes Somos?</a></li>
-      <li><a href="nuevo">Contacto</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="{% url 'home:adm-finanza' %}">Administración y Finanzas</a></li>
+      <li><a href="{% url 'home:informatica' %}">Informática y Tecnologia (TI)</a></li>
+      <li><a href="{% url 'home:quienes_somos' %}">Quienes Somos?</a></li>
+      <li><a href="{% url 'home:contacto_enviar' %}">Contacto</a></li>
     </ul>
   </div>
 </nav>
@@ -44,7 +44,7 @@
         <div class="row">
             <div class="col-md-8">
             <p><font><FONT FACE="times new roman">Espinoza Consultores nace con el objetivo de proveer una base sólida a las empresas desde el punto de vista de la administración de los recursos humanos, procesos contables y operaciones y de la arquitectura tecnológica de sistemas (TI).</font><font></p>
-              <a href="servprofesionales" class="btn btn-lg btn-warning"><FONT FACE="times new roman">Servicios Profesionales</font></a>
+              <a href="{% url 'home:servprofesionales' %}" class="btn btn-lg btn-warning"><FONT FACE="times new roman">Servicios Profesionales</font></a>
             </div>
             <div class="col-md-4">
                 <div class="center-block">
