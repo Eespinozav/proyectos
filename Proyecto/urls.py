@@ -25,10 +25,9 @@ urlpatterns = [
 urlpatterns += [
     # ... the rest of your URLconf goes here ...
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+        
 
-
-
-urlpatterns = [
+urlpatterns += [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('Apps.Home.urls', namespace='home')),
 
