@@ -23,11 +23,11 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Espinoza Consultores</a>
+    <a class="navbar-brand" href="{% url 'home:index' %}">Espinoza Consultores</a>
   </div>
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="#">Home</a></li>
+      <li><a href="{% url 'home:index' %}">Home</a></li>
       <li><a href="{% url 'home:adm-finanza' %}">Administración y Finanzas</a></li>
       <li><a href="{% url 'home:informatica' %}">Informática y Tecnologia (TI)</a></li>
       <li><a href="{% url 'home:quienes_somos' %}">Quienes Somos?</a></li>
